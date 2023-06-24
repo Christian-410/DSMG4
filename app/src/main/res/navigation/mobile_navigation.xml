@@ -7,21 +7,21 @@
 
     <fragment
         android:id="@+id/inicio"
-        android:name="project.dsm_g4.ui.dashboard.DashboardFragment"
+        android:name="project.dsm_g4.ui.home.dashboard.DashboardFragment"
         android:label="Dashboard"
         tools:layout="@layout/hu00_inicio" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="project.dsm_g4.ui.dashboard.DashboardFragment"
-        android:label="Dashboard"
+        android:id="@+id/pantalla_principal"
+        android:name="project.dsm_g4.ui.home.HomeFragment"
+        android:label="@string/title_home"
         tools:layout="@layout/hu01_pantalla_principal" />
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="project.dsm_g4.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/hu02_busqueda" />
+        android:id="@+id/navigation_dashboard"
+        android:name="project.dsm_g4.ui.home.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/hu12_resumen_compra" />
 
     <fragment
         android:id="@+id/navigation_notifications"

@@ -1,4 +1,4 @@
-package project.dsm_g4.ui.dashboard
+package project.dsm_g4.ui.home.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater

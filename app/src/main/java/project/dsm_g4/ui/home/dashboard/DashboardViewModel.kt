@@ -1,4 +1,4 @@
-package project.dsm_g4.ui.dashboard
+package project.dsm_g4.ui.home.dashboard
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
