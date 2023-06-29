@@ -7,7 +7,30 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.dashboard.DashboardFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#BBF4AF"
+                app:navigationIcon="@drawable/ic_volver_atras"
+                app:title="Metodos de entrega"
+                app:titleTextColor="#000000"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="2dp" />
 
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/botones_inferiores"
         android:layout_width="match_parent"
@@ -161,5 +184,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.333" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
