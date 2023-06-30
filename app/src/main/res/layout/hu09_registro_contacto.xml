@@ -126,7 +126,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="#30824E"
                         android:textSize="16sp"
-                        tools:text="cristian_03@live.com" />
+                        android:text="cristian_03@live.com" />
 
                     <TextView
                         android:id="@+id/textViewInformacion"
