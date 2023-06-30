@@ -173,7 +173,7 @@
                 <Spinner
                     android:id="@+id/spinner1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="48dp"
                     android:pading="5dp"
                     android:entries="@array/options" />
             </LinearLayout>
