@@ -10,6 +10,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.hu10_metodo_envio)
+        setContentView(R.layout.hu01_pantalla_principal)
     }
 }
