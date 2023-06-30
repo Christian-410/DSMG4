@@ -25,7 +25,7 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="#BBF4AF"
                 app:navigationIcon="@drawable/ic_volver_atras"
-                app:title="Métodos de pago"
+                app:title="Resumen de Pago"
                 app:titleTextColor="#000000"
                 tools:layout_editor_absoluteX="2dp"
                 tools:layout_editor_absoluteY="2dp" />
