@@ -18,7 +18,39 @@
     <string name="cuenta">Mi cuenta</string>
     <string name="recomendados">Productos Recomendados</string>
     <string name="productores">Productores</string>
-    <string-array name="options">
+    <string-array name="Departamento">
+        <item>Amazonas</item>
+        <item>Ancash</item>
+        <item>Apurímac</item>
+        <item>Arequipa</item>
+        <item>Ayacucho</item>
+        <item>Cajamarca</item>
+        <item>Cusco</item>
+        <item>Huancavelica</item>
+        <item>Huánuco</item>
+        <item>Ica</item>
+        <item>Junín</item>
+        <item>La Libertad</item>
+        <item>Lambayeque</item>
+        <item>Lima</item>
+        <item>Loreto</item>
+        <item>Madre de Dios</item>
+        <item>Moquegua</item>
+        <item>Pasco</item>
+        <item>Piura</item>
+        <item>Puno</item>
+        <item>San Martín</item>
+        <item>Tacna</item>
+        <item>Tumbes</item>
+        <item>Ucayali</item>
+    </string-array>
+
+    <string-array name="Provincia">
+        <item>Opción 1</item>
+        <item>Opción 2</item>
+        <item>Opción 3</item>
+    </string-array>
+    <string-array name="Distrito">
         <item>Opción 1</item>
         <item>Opción 2</item>
         <item>Opción 3</item>
