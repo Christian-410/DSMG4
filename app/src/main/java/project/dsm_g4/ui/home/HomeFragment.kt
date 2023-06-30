@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import project.dsm_g4.databinding.FragmentHomeBinding
+//import project.dsm_g4.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
-
+/*
     private var _binding: FragmentHomeBinding? = null
 
     // This property is only valid between onCreateView and
@@ -38,5 +38,5 @@ class HomeFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
+    }*/
 }

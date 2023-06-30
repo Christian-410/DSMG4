@@ -79,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Botones"
-        android:name="project.dsm_g4.FragmentoRetiroTienda" />
+         />
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/botones_inferiores"
         android:layout_width="match_parent"
