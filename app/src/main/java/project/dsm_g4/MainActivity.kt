@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.hu11_metodo_pago1)
+        setContentView(R.layout.hu12_resumen_compra)
       /*  radioBoton1 = findViewById(R.id.botonCredito)
         radioBoton2 = findViewById(R.id.botonDebito)
         constraintLayout1 = findViewById(R.id.metodoPago1)

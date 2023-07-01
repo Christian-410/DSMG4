@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ResumenCompra"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.home.dashboard.DashboardFragment">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/ContenidoInicial"
@@ -24,7 +23,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="#BBF4AF"
-                app:navigationIcon="@drawable/ic_volver_atras"
                 app:title="Resumen de Pago"
                 app:titleTextColor="#000000"
                 tools:layout_editor_absoluteX="2dp"
@@ -34,7 +32,181 @@
     </LinearLayout>
 
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/TarjetaProductos"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/ContenidoInicial"
 
+        android:elevation="5dp">
+        <LinearLayout
+            android:id="@+id/ContenedorProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Productos"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_margin="8dp"
+                        android:id="@+id/ProductosComprados"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/resumenMonto"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/TarjetaProductos"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/textoTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textColor="#2F8B5F"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/nameMonto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textoTotal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtMontoCompra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Monto de compra"
+                    android:textColor="#2F8B5F"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/montoCompra"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="58dp"
+                    android:layout_marginTop="5dp"
+                    android:text="S/.    262.00 "
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nameMontodescuento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textoTotal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtMontoDescuento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Monto de descuento"
+                    android:textColor="#2F8B5F"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/montoDescuento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="40dp"
+                    android:text="S/.    42.00 "
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:id="@+id/namePago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textoTotal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtPagoTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Pago Total"
+                    android:textColor="#2F8B5F"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/pagoTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="106dp"
+                    android:text="S/.    242.00 "
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    <Button
+        android:id="@+id/buttonContinuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#156C38"
+        android:radius="20dp"
+        android:text="Comprar"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resumenMonto" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/botones_inferiores"
@@ -48,146 +220,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
-        <TextView
-            android:id="@+id/cuenta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:text="@string/cuenta"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.955"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/micuenta"
-            app:layout_constraintVertical_bias="0.0" />
 
-        <TextView
-            android:id="@+id/favorites"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:text="@string/favorites"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.745"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/favorito"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/compra"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:text="@string/compra"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bolsa"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/categories"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/categories"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.255"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/categorías"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/inicio_boton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/casita"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.041"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/casita"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <ImageView
-            android:id="@+id/casita"
-            android:layout_width="52dp"
-            android:layout_height="47dp"
-            android:contentDescription="@null"
-            android:src="@drawable/ic_home_24dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.017"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.304" />
-
-        <ImageView
-            android:id="@+id/categorías"
-            android:layout_width="52dp"
-            android:layout_height="47dp"
-            android:contentDescription="@null"
-            android:src="@drawable/ic_dashboard_black_24dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.269"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.304" />
-
-        <ImageView
-            android:id="@+id/bolsa"
-            android:layout_width="53dp"
-            android:layout_height="47dp"
-            android:contentDescription="@null"
-            android:src="@drawable/ic_bolsa_compra"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.304" />
-
-        <ImageView
-            android:id="@+id/favorito"
-            android:layout_width="53dp"
-            android:layout_height="46dp"
-            android:contentDescription="@null"
-            android:src="@drawable/ic_corazon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.741"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.333" />
-
-        <ImageView
-            android:id="@+id/micuenta"
-            android:layout_width="53dp"
-            android:layout_height="46dp"
-            android:contentDescription="@null"
-            android:src="@drawable/ic_mi_cuenta"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.952"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.333" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
