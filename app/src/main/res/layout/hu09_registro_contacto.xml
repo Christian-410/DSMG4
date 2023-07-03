@@ -35,12 +35,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="55dp"
         android:backgroundTint="#00BCD4">
         <TextView
             android:id="@+id/texto1"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:text="¿Quién va a recibir la compra?"
             android:textColor="#000000"
             android:textSize="16sp"
@@ -59,7 +59,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/texto1">
             <RadioButton
-                android:id="@+id/radioButtonOpcion1"
+                android:id="@+id/radioYo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
@@ -68,7 +68,7 @@
                 android:textSize="16sp" />
 
             <RadioButton
-                android:id="@+id/radioButtonOpcion2"
+                android:id="@+id/radioOtro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
@@ -115,25 +115,24 @@
 
                 <LinearLayout
                     android:id="@+id/CorreoMensaje"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textViewCorreoResaltado"
+                        android:id="@+id/correoUsuario"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="#30824E"
                         android:textSize="16sp"
-                        android:text="cristian_03@live.com" />
+                        android:text="javiervilca@unmsm.edu.pe" />
 
                     <TextView
                         android:id="@+id/textViewInformacion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="con los datos \nde la compra"
+                        android:text="con los datos de la compra"
                         android:textColor="#000000"
                         android:textSize="16sp" />
                 </LinearLayout>
@@ -146,7 +145,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="80dp"
-            android:layout_marginStart="0dp"
             android:paddingStart="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -163,11 +161,10 @@
             <EditText
                 android:id="@+id/editTextNombre"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="48dp"
                 android:inputType="textPersonName"
-                android:hint="ingrese su nombre"
+                android:hint="Ingrese su nombre"
                 android:maxLines="1" />
-
 
 
             <TextView
@@ -181,7 +178,7 @@
             <EditText
                 android:id="@+id/editTextApellidoPaterno"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="48dp"
                 android:inputType="textPersonName"
                 android:hint="Ingrese su apellido paterno"
                 android:maxLines="1" />
@@ -197,7 +194,7 @@
             <EditText
                 android:id="@+id/editTextApellidoMaterno"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="48dp"
                 android:inputType="textPersonName"
                 android:hint="Ingrese su apellido materno"
                 android:maxLines="1" />
@@ -215,7 +212,7 @@
             <EditText
                 android:id="@+id/editTextNumeroCelular"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="48dp"
                 android:inputType="phone"
                 android:hint="Ingrese su telefono"
                 android:maxLines="1" />
@@ -238,11 +235,10 @@
                 android:maxLines="1"
                 android:hint="Ingrese su dni" />
 
-
         </LinearLayout>
 
         <Button
-            android:id="@+id/buttonContinuar"
+            android:id="@+id/continuarEntrega"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"

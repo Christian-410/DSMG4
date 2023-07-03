@@ -100,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Total"
-                android:textColor="#2F8B5F"
+                android:textColor="#000000"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
@@ -118,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="Monto de compra"
-                    android:textColor="#2F8B5F"
+                    android:textColor="#000000"
                     android:textSize="16dp" />
 
                 <TextView
@@ -128,7 +128,7 @@
                     android:layout_marginStart="58dp"
                     android:layout_marginTop="5dp"
                     android:text="S/.    262.00 "
-                    android:textColor="#000"
+                    android:textColor="#c0c0c0"
                     android:textSize="16dp" />
             </LinearLayout>
             <LinearLayout
@@ -144,7 +144,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="Monto de descuento"
-                    android:textColor="#2F8B5F"
+                    android:textColor="#000000"
                     android:textSize="16dp" />
 
                 <TextView
@@ -154,7 +154,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginStart="40dp"
                     android:text="S/.    42.00 "
-                    android:textColor="#000"
+                    android:textColor="#c0c0c0"
                     android:textSize="16dp" />
             </LinearLayout>
             <View
@@ -176,7 +176,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="Pago Total"
-                    android:textColor="#2F8B5F"
+                    android:textColor="#000000"
                     android:textSize="16dp" />
 
                 <TextView
@@ -186,7 +186,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginStart="106dp"
                     android:text="S/.    242.00 "
-                    android:textColor="#000"
+                    android:textColor="#c0c0c0"
                     android:textSize="16dp" />
             </LinearLayout>
         </LinearLayout>

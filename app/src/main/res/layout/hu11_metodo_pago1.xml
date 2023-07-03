@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:padding="15dp"
             android:text=" Tarjeta\n de crédito"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
 
         <RadioButton
             android:id="@+id/botonDebito"
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:text="Elige un método de pago"
         android:paddingStart="35dp"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +90,7 @@
         <ImageView
             android:id="@+id/imagenTarjeta"
             android:layout_width="25dp"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:layout_marginStart="10dp"
             android:scaleType="centerCrop"
             android:src="@drawable/icono_tarjeta" />
@@ -99,10 +99,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:scaleY="0.8"
-        android:scaleX="0.9"
+        android:layout_margin="20dp"
+         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/textoDatos"
         app:layout_constraintBottom_toTopOf="@id/botones_inferiores"
         >
@@ -111,12 +109,9 @@
             android:id="@+id/Opciones"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:background="@drawable/forma_opciones_tienda"
-
             android:orientation="vertical"
-            android:paddingStart="50dp">
+            android:paddingStart="30dp">
 
             <TextView
                 android:id="@+id/textoNumeroTarjeta"
@@ -130,7 +125,7 @@
                 android:id="@+id/editTextTarjeta"
                 android:layout_width="250dp"
                 android:layout_height="60dp"
-                android:hint="Ingres su numero de tarjeta"
+                android:hint="Ingrese su numero de tarjeta"
                 android:inputType="number"
                 android:digits="0123456789 "
                 android:maxLength="19"
@@ -214,7 +209,7 @@
                 android:id="@+id/editTextNombre"
                 android:layout_width="250dp"
                 android:layout_height="60dp"
-                android:hint="Ingres el nombre del titular"
+                android:hint="Ingrese el nombre del titular"
                 android:inputType="textPersonName"
                 android:maxLines="1" />
             <TextView
@@ -228,7 +223,7 @@
                 android:id="@+id/editTextCorreo"
                 android:layout_width="250dp"
                 android:layout_height="60dp"
-                android:hint="correo"
+                android:hint="Ingrese el correo"
                 android:inputType="textEmailAddress"
                 android:maxLines="1" />
 
@@ -237,7 +232,7 @@
             android:id="@+id/Grupo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="0dp"
+            android:layout_marginStart="5dp"
             android:layout_marginEnd="16dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
@@ -276,12 +271,14 @@
             </LinearLayout>
         </LinearLayout>
         <Button
+            android:id="@+id/botonPagarCredito"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#053852"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="5dp"
             android:radius="50dp"
             android:text="Continuar"
+            android:textColor="#FFFFFF"
             android:textAllCaps="false"
             android:textSize="16sp"
             android:textStyle="normal|bold"/>

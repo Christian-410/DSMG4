@@ -2,15 +2,17 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mensaje"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="68dp"
+    android:gravity="center"
     >
 
     <com.google.android.material.card.MaterialCardView
         app:cardCornerRadius="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="64dp"
         android:backgroundTint="#EBEBEB"
         android:elevation="5dp">
         <LinearLayout
@@ -39,7 +41,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:text="Su orden fue\n realizada con\néxito "
-                    android:textColor="#2F8B5F"
+                    android:textColor="#000000"
                     android:textSize="20dp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -63,7 +65,7 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginStart="20dp"
                         android:text="Número de Recibo"
-                        android:textColor="#2F8B5F"
+                        android:textColor="#000000"
                         android:textSize="18sp" />
 
                     <TextView
@@ -73,7 +75,7 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginStart="20dp"
                         android:text="COD-XXX343232"
-                        android:textColor="#000"
+                        android:textColor="#C0C0C0"
                         android:textSize="16dp" />
                 </LinearLayout>
                 <LinearLayout
@@ -89,7 +91,7 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginStart="20dp"
                         android:text="Monto total"
-                        android:textColor="#2F8B5F"
+                        android:textColor="#000000"
                         android:textSize="18sp" />
 
                     <TextView
@@ -99,7 +101,7 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginStart="20dp"
                         android:text="S/. 242.00"
-                        android:textColor="#000"
+                        android:textColor="#C0C0C0"
                         android:textSize="16dp" />
                 </LinearLayout>
 
@@ -116,7 +118,7 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginStart="20dp"
                         android:text="Tarjeta"
-                        android:textColor="#2F8B5F"
+                        android:textColor="#000000"
                         android:textSize="18sp" />
 
                     <TextView
@@ -126,7 +128,7 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginStart="20dp"
                         android:text="XXXX-XXXX-XXXX-4437"
-                        android:textColor="#000"
+                        android:textColor="#C0C0C0"
                         android:textSize="16dp" />
                 </LinearLayout>
             </LinearLayout>

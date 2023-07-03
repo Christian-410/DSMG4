@@ -35,7 +35,7 @@
     <LinearLayout
         android:id="@+id/Botones"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingStart="35dp"
         android:paddingTop="1dp"
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:padding="15dp"
             android:text=" Tarjeta\n de crédito"
-            android:textSize="12sp" />
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/botonDebito"
@@ -56,7 +56,7 @@
             android:padding="15dp"
             android:text=" Tarjeta\n de débito"
             android:layout_marginLeft="20dp"
-            android:textSize="12sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <TextView
@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:text="Elige un método de pago"
         android:paddingStart="35dp"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,7 +91,7 @@
         <ImageView
             android:id="@+id/imagenTarjeta"
             android:layout_width="25dp"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:layout_marginStart="10dp"
             android:scaleType="centerCrop"
             android:src="@drawable/icono_tarjeta" />
@@ -101,8 +101,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:scaleY="0.9"
-        android:scaleX="0.9"
+android:layout_margin="20dp"
         app:layout_constraintTop_toBottomOf="@+id/textoDatos"
         app:layout_constraintBottom_toTopOf="@id/botones_inferiores"
         >
@@ -111,8 +110,6 @@
             android:id="@+id/Opciones"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:background="@drawable/forma_opciones_tienda"
 
             android:orientation="vertical"
@@ -202,7 +199,7 @@
                 android:id="@+id/editTextNombre"
                 android:layout_width="250dp"
                 android:layout_height="60dp"
-                android:hint="Ingres el nombre del titular"
+                android:hint="Ingrese el nombre del titular"
                 android:inputType="textPersonName"
                 android:maxLines="1" />
             <TextView
@@ -216,7 +213,7 @@
                 android:id="@+id/editTextCorreo"
                 android:layout_width="250dp"
                 android:layout_height="60dp"
-                android:hint="correo"
+                android:hint="Ingrese el correo"
                 android:inputType="textEmailAddress"
                 android:maxLines="1" />
 
@@ -264,6 +261,7 @@
             </LinearLayout>
         </LinearLayout>
         <Button
+            android:id="@+id/botonPagarDebito"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#053852"
